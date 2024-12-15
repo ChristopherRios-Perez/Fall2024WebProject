@@ -1,0 +1,169 @@
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #d1d1d1;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f2f2f2;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 
+        2px 2px 0px #000, 
+        -2px -2px 0px #000, 
+        2px -2px 0px #000, 
+        -2px 2px 0px #000, 
+        4px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    background: transparent;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6e6e6e;
+}
+
+.text-content {
+    flex: 2;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow behind the text, this lets the text be readable
+    with the background I currently have */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.content {
+    flex: 2;
+}
+
+.favorites {
+    flex: 1;
+    background-color: #3c3c3c;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.favorite-song {
+    margin-bottom: 20px;
+}
+
+.favorite-movies h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.favorite-movies table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.favorite-movies th,
+.favorite-movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.favorite-movies th {
+    background-color: #2e2e2e;
+    font-weight: bold;
+}
+
+.favorite-shows h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.favorite-shows table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.favorite-shows th,
+.favorite-shows td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.favorite-shows th {
+    background-color: #2e2e2e;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0; 
+    font-family: Arial, sans-serif;
+  }
+
+li {
+    display: inline;
+    margin: 0 15px;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}

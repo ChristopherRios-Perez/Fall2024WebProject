@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>Welcome to My Personal Top Picks</h1>
+        <p>Discover my favorite games & books/manga!</p>
+    </div>
+
+    </div>
+    
+    <div class="navbar-container games">
+        <ul class="navbar">
+            <li class="arkham"><a href="BatmanArkhamCity.html">Batman Arkham City</a></li>
+            <li class="rdr2"><a href="RDR2.html">Red Dead Redemption II</a></li>
+            <li class="cyberpunk"><a href="Cyberpunk2077.html">Cyberpunk 2077</a></li>
+        </ul>
+    </div>
+    
+    <div class="navbar-container books">
+        <ul class="navbar">
+            <li class="got"><a href="GoT.html">Game of Thrones</a></li>
+            <li class="junji"><a href="Junji-Ito.html">Junji Ito</a></li>
+            <li class="berserk"><a href="Berserk.html">Berserk</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-button-container">
+        <button id="aboutBtn" onclick="window.location.href='AboutMe.html'">About Me</button>
+        <button id="contactBtn">Contact Me</button>
+    </div>
+    
+    <div id="contactForm" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn">&times;</span>
+            <h2>Contact Me</h2>
+            <form action="your_form_handler.php" method="POST"> 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <article class="article1">
+        <h3 style="text-align: center;">This is my personal Website discussing some of my personal top games, books/manga that I've enjoyed!</br></h3>
+        This is my personal website that I'll be using to explain and talk about some of my personal hobbies
+        such as gaming and books.</br>
+        Each of my links above will go into detail about my current games and interests with depth and links
+        to their respective media along with interesting bits about them overall! I hope whomever sees this site
+        enjoys the content I've curated and added in each of the above respective links.
+
+    </article>
+
+    <div class="gif-container">
+
+        <img src="Batman.gif" alt="Batman GIF" class="gif">
+        <img src="RDR2.gif" alt="Red Dead Redemption 2" class="gif">
+        <img src="Cyberpunk2077.gif" alt="Cyberpunk 2077" class="gif">
+        <img src="GoT.gif" alt="GoT" class="gif">
+        <img src="Berserk.gif" alt="Berserk" class="gif">
+        <img src="JunjiIto.gif" alt="JunjiIto" class="gif">
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,140 @@
+.video-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@font-face {
+    font-family: 'RedDeadFont';
+    src: url('path-to-your-font-file.ttf') format('truetype');
+}
+
+.red-dead-title {
+    font-family: 'RedDeadFont', sans-serif;
+    font-size: 4rem; /* Adjust size */
+    color: #ffffff; /* White */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds depth */
+    letter-spacing: 0.1em; /* Spacing similar to the logo */
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #000000; /* Optional for effect */
+    padding: 20px;
+    margin: 0 auto;
+    display: inline-block;
+    border: 4px solid #FF0000; /* Red border like the logo */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f2f2f2;
+    background: url('RDR2Background.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #f2f2f2;
+    background: url('RDR2Background.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-bottom: 2px solid #d1d1d1;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f2f2f2;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 
+        2px 2px 0px #000, 
+        -2px -2px 0px #000, 
+        2px -2px 0px #000, 
+        -2px 2px 0px #000, 
+        4px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Navigation Styles */
+nav {
+    background: transparent; /* Remove the block */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Ensure links are inline */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6e6e6e;
+}
+
+.text-content {
+    flex: 2;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow behind the text, this lets the text be readable
+    with the background I currently have */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid #c5c5c5;
+    color: #f2f2f2;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Text Content */
+.text-content {
+    flex: 2; /* Occupies more space on the left */
+    color: #f2f2f2;
+    font-size: calc(1rem + 0.3vw); /* Scales font size with viewport width */
+    line-height: 1.6;
+    
+}

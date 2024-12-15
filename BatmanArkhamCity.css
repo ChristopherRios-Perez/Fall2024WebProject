@@ -1,0 +1,178 @@
+/* Initial hidden state */
+#fog-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #f2f2f2;
+    opacity: 0; /* Start invisible */
+    filter: blur(10px); /* Start blurred */
+}
+
+/* Animation keyframes */
+@keyframes fogEffect {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Add the animation */
+#fog-title.animate {
+    animation: fogEffect 2s ease-out forwards;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #f2f2f2;
+    background-color: #1a1a1a; /* Dark background */
+    margin: 0;
+    padding: 0;
+}
+
+/* General Body Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #f2f2f2;
+    background: url('ArkhamCityBackground.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-bottom: 2px solid #d1d1d1;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f2f2f2;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 
+        2px 2px 0px #000, 
+        -2px -2px 0px #000, 
+        2px -2px 0px #000, 
+        -2px 2px 0px #000, 
+        4px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Navigation Styles */
+nav {
+    background: transparent; /* Remove the block */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Ensure links are inline */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6e6e6e;
+}
+
+.text-content {
+    flex: 2;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow behind the text, this lets the text be readable
+    with the background I currently have */
+}
+
+.audio-player {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-caption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white; /* Ensure text is readable */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Darker shadow for contrast */
+    text-align: center; /* Center align the text */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 5px 10px; /* Add some spacing */
+    border-radius: 5px; /* Rounded corners for a smooth look */
+    width: fit-content; /* Ensure the background wraps around the text */
+    margin: 0 auto; /* Center the caption below the audio */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid #c5c5c5;
+    color: #f2f2f2;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Text Content */
+.text-content {
+    flex: 2; /* Occupies more space on the left */
+    color: #f2f2f2;
+    font-size: calc(1rem + 0.3vw); /* Scales font size with viewport width */
+    line-height: 1.6;
+    
+}
+
+/* Video Content */
+.video-content {
+    flex: 1; /* Occupies less space on the right */
+    display: flex;
+    flex-direction: column; /*this will stack the VIDEO and GIF!*/
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* this will space the video and gif*/
+}
+
+iframe {
+    width: 80%; /* Full width within its container */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    max-width: 560px; /* Maximum width of the video */
+    border: none; /*This will stop the border around the ifram*/
+
+}
+
+
+
+

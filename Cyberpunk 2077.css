@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'CyberpunkFont';
+    src: url('path-to-your-font-file.ttf') format('truetype');
+}
+
+/* Neon flicker animation */
+@keyframes neon-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 
+            0 0 10px #FFD700,
+            0 0 20px #FFD700,
+            0 0 30px #FF0000,
+            0 0 40px #FF0000,
+            0 0 50px #FF0000,
+            0 0 60px #FF0000;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #FF0000, -2px -2px #00FFFF;
+        transform: translate(0, 0);
+    }
+    20% {
+        text-shadow: -2px -2px #FF0000, 2px 2px #00FFFF;
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        text-shadow: 2px 2px #FF0000, -2px -2px #00FFFF;
+        transform: translate(2px, -2px);
+    }
+    60%, 100% {
+        text-shadow: 2px 2px #FF0000, -2px -2px #00FFFF;
+        transform: translate(0, 0);
+    }
+}
+
+.cyberpunk-title {
+    animation: glitch 1s infinite alternate, neon-flicker 2s infinite alternate;
+}
+
+.cyberpunk-title {
+    font-family: 'CyberpunkFont', sans-serif;
+    font-size: 5rem; /* Large, bold title */
+    color: #FFD700; /* Neon yellow color */
+    text-shadow: 
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 30px #FF0000, /* Red glow */
+        0 0 40px #FF0000,
+        0 0 50px #FF0000,
+        0 0 60px #FF0000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    animation: neon-flicker 2s infinite alternate; /* Flicker effect */
+    margin-top: 100px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #f2f2f2;
+    background: url('CP2077Background.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-bottom: 2px solid #d1d1d1;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f2f2f2;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 
+        2px 2px 0px #000, 
+        -2px -2px 0px #000, 
+        2px -2px 0px #000, 
+        -2px 2px 0px #000, 
+        4px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Navigation Styles */
+nav {
+    background: transparent; /* Remove the block */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Ensure links are inline */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6e6e6e;
+}
+
+.text-content {
+    flex: 2;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid #c5c5c5;
+    color: #f2f2f2;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 20px;
+}
+
+
+.text-content {
+    flex: 2; 
+    color: #f2f2f2;
+    font-size: calc(1rem + 0.3vw); 
+    line-height: 1.6;
+    
+}
+
+
+.video-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+iframe {
+    width: 80%; 
+    aspect-ratio: 16 / 9; 
+    max-width: 560px; 
+    border: none; /
+
+}
+
+
+
